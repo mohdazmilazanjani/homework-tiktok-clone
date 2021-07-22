@@ -14,12 +14,11 @@ exports.handler = async function (event, context, callback){
         .collection(collection)
 
     try{
-        const user = await posts.create("a post", {
-            title: "first post",
-        })
+        const res = await posts.find()
 
         return {
-            statusCode: 200
+            statusCode: 200,
+            body: JSON.stringify(res)
         }
     } catch (e) {
         console.error(e)
