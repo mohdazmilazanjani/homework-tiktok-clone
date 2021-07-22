@@ -14,7 +14,9 @@ exports.handler = async function (event, context, callback){
         .collection(collection)
 
     try{
-        const res = await posts.find()
+        await posts.create("a post", {
+            title: "first post",
+        })
 
         return {
             statusCode: 200,
