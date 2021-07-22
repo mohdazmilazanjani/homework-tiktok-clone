@@ -14,6 +14,7 @@ const Home = () => {
 
   const fetchData = async () => {
     const results = await axios.get('./netlify/functions/posts')
+    console.log(results.data)
     setUsers(results.data)
   }
   
