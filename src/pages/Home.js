@@ -4,8 +4,7 @@ import SuggestedBox from '../components/SuggestedBox';
 
 const Home = () => {
   return (
-    <div>
-        <h1>Home</h1>
+    <div className="container">
         <FollowersColumn />
         <Feed />
         <SuggestedBox />

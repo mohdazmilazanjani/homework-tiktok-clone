@@ -1,7 +1,7 @@
 const Feed = () => {
     return (
       <div className="feed">
-          <h1>Feed</h1>
+          <h1>Home</h1>
       </div>
     );
   }

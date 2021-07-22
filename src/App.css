@@ -2,6 +2,11 @@
   text-align: center;
 }
 
+.container{
+  display: flex;
+  flex-direction: row;
+}
+
 .header {
   background-color: yellow;
 }
@@ -14,6 +19,7 @@
 
 .feed{
   background-color: white;
+  width: 500px;
 }
 
 .suggested-box{
