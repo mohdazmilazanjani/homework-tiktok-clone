@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import axios from 'axios'
-import faker from "faker"
 
 const Upload = () => {
   const username = 'aniak100'
@@ -11,7 +10,7 @@ const Upload = () => {
   const today = new Date()
   const timestamp = today.toISOString()
 
-  let id = faker.random.uuid()
+  let id = 1
 
   const handleSubmit = async (e) => {
     e.preventDefault()
